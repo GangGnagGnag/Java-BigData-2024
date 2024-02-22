@@ -6,7 +6,7 @@
     - [깃허브](https://github.com)가입
     - [깃 설치](https://git-scm.com/downloads) 설치
     - [깃허브 데스트탑](https://desktop.github.com/) 설치
-    - [파이썬](https://www.python.org/downloads/)
+    - [파이썬](https://www.python.org/downloads/) 설치
     - [Visual Studio code](https://vscode.dev/github/hyanyul/python-2024/blob/main/README.md)설치
     - [나눔고딕코딩](https://github.com/naver/nanumfont) 글자체 설치
 
