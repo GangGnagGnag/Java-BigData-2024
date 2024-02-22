@@ -1,4 +1,5 @@
 #file: p08_review.py
+# desc : 되새김문제 p116
 
 # Q2
 a = 13
