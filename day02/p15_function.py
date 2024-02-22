@@ -94,3 +94,11 @@ def calc2(a, b):
 a, b, c, d  = calc2(3,4)
 
 print(a,b,c,d)
+
+
+## 익명함수 람다함수
+# 간단한거는 람다 함수를 사용하는게 좋지만 복잡한 계산을 할때는 사용하지말기
+add = lambda a, b: a + b    # 람다함수 끝
+print(add(5, 4))
+
+madd = lambda *args: i for i in args
