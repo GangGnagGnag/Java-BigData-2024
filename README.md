@@ -3,13 +3,10 @@
 
 ##1일차
 - 파이썬 개발환경
-    - github 가입
-    [깃허브](https://github.com)
-    - git 설치
-    [깃 설치](https://git-scm.com/downloads)
-    - github 데스크탑 설치
-
-    - 파이썬 설치
+    - [깃허브](https://github.com)가입
+    - [깃 설치](https://git-scm.com/downloads) 설치
+    - [깃허브 데스트탑](https://desktop.github.com/) 설치
+    - [파이썬](https://www.python.org/downloads/)
     - Visual Studio code 설치
     - 나눔고딕코딩 글자체 설치
 
