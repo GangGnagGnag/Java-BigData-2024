@@ -4,8 +4,11 @@
 ##1일차
 - 파이썬 개발환경
     - github 가입
+    https://github.com
     - git 설치
+    https://git-scm.com/downloads
     - github 데스크탑 설치
+    
     - 파이썬 설치
     - Visual Studio code 설치
     - 나눔고딕코딩 글자체 설치
