@@ -7,6 +7,9 @@
 # 3. DB open(or connect) , close()
 
 # 언어체계 추가 ASCII(한들 cp949), 유니코드(utf-8)
+
+# 상대경로, 절대경로(*중요*)
+
 f = open('./sample.txt', mode='w', encoding='utf-8')
 # 파일쓰기 진행
 f.write('안녕하세요. 파이썬')
