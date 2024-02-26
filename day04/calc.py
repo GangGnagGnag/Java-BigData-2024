@@ -13,3 +13,13 @@ def mul(a, b):
     return res
 
 
+def __init__(self):
+    self.value = 0
+        
+def add(self, val):
+    self.value += val
+    return self.value
+
+def minus(self, val):
+    self.value -= val
+    return self.value
