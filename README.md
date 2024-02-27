@@ -71,6 +71,8 @@
         - 아스키 및 유니코드
         - 주소록 앱 만들기
 
+        ![주소록앱](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata01.gif)
+
 ##6일차
 
 
