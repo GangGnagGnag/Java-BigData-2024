@@ -101,7 +101,7 @@
 
         ![주소록앱](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata01.gif)
 
-        - Windows App만들기(Tkinter, PyQt)
+        - Windows App만들기(PyQt)
 ##6일차
 
 
