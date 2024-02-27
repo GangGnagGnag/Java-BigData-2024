@@ -71,8 +71,7 @@
         - 아스키 및 유니코드
         - 주소록 앱 만들기
 
-        '''pythhon
-
+        '''python
         class Contact: # 주소록 클래스
             def __init__(self, name, phoneNumber, eMail, addr) -> None:   # 생성자
                 self.__name = name
@@ -95,11 +94,11 @@
                 
             def getInfo(self):
                 return self.__name, self.__phoneNumber, self.__eMail, self.__addr
-
         '''
 
         ![주소록앱](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata01.gif)
 
+        - Windows App만들기(Tkinter, PyQt)
 ##6일차
 
 
