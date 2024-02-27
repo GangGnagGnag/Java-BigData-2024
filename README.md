@@ -102,6 +102,8 @@
         ![주소록앱](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata01.gif)
 
         - Windows App만들기(PyQt)
+
+        ![QtApp](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata02.png)
 ##6일차
 
 
