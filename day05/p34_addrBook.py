@@ -38,8 +38,9 @@ def setContact(): # 사용자 입력으로 주소록 받기함수
     contact = Contact(name, phoneNumber, eMail, addr) # 매개변수명과 동일하게 로컬변수 이름 지정
     return contact
 
-def delContact(lst, name): #연락처 삭제함수
-    for i, item in enumerate(lst):
+def delContact(lst, name): # 연락처 삭제함수
+    for i in range(len(lst)-1, -1, -1):
+        item = lst[i]
         if item.isNameExist(name):
             del lst[i]
 
@@ -59,10 +60,9 @@ def loadContact(lst): #처음 실행시 연락처 로드함수
                 lines = line.replace('\n','').split('/') #list
                 contact = Contact(name=lines[0],phoneNumber=lines[1],eMail=lines[2],addr=lines[3])
                 lst.append(contact)
-    except: # 연락처 파일이 없으면 새로 만들어줌.
-        f = open('./contacts.txt', mode = 'w',encoding='utf-8')
+    except: #연락처 파일이 없으면 새로 만들어준다
+        f = open('./contacts.txt',mode='w',encoding='utf-8')
         f.close()
-
 
 
 def displayMenu():
@@ -72,7 +72,10 @@ def displayMenu():
             '3. 연락처 삭제\n'
             '4. 종료\n')
     print(menu)
-    sel = int(input('메뉴입력 : '))
+    try:
+        sel = int(input('메뉴입력 : '))
+    except: #1~4가 아닌 잘못된 문자 입력할때 예외처리
+        sel = 0
     return sel
 
 def clearConsole():
@@ -98,10 +101,18 @@ def run():
 
         if selMenu == 1: # 연락처 추가라면
             clearConsole()
-            contact = setContact()
-            lstContact.append(contact)
-            # print(lstContact)
-            input(); clearConsole() # 엔터 입력유도            
+            try:
+                contact = setContact()
+            except: #입력을 시킨대로 안하면
+                contact = None
+
+            if contact != None:
+                lstContact.append(contact)
+                input('입력 성공!')
+            else:
+                input('입력 실패')
+
+            clearConsole() # 엔터 입력유도            
         elif selMenu == 2: # 연락처 출력
             clearConsole()
             getContacts(lstContact)
