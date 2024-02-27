@@ -72,8 +72,8 @@
         - 주소록 앱 만들기
 
         '''pythhon
+
         class Contact: # 주소록 클래스
-        
             def __init__(self, name, phoneNumber, eMail, addr) -> None:   # 생성자
                 self.__name = name
                 self.__phoneNumber = phoneNumber
