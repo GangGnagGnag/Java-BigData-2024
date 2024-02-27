@@ -26,7 +26,7 @@ class Contact: # 주소록 클래스
             return False
         
     def getInfo(self):
-        return self.__name, self.__phoneNumber, self.__eMail, self.__addr
+        return self.__name,self.__phoneNumber,self.__eMail,self.__addr
 
 def setContact(): # 사용자 입력으로 주소록 받기함수
     (name, phoneNumber, eMail, addr) = input('입력(이름,핸드폰,이메일,주소[/])> ').split('/')
@@ -43,12 +43,27 @@ def delContact(lst, name): #연락처 삭제함수
         if item.isNameExist(name):
             del lst[i]
 
-def saveContact(lis): #연락처 저장함수
-    with open('./contact.txt',mode='w',encoding='utf-8') as fp:
-        for item in lis:
-            name, phoneNumber, eMail, addr = item.getInfo()
+def saveContact(lst): #연락처 저장함수
+    with open(file= './contacts.txt', mode='w',encoding='utf-8') as fp:
+        for item in lst:
+            name,phoneNumber,eMail,addr = item.getInfo()
             fp.write(f'{name}/{phoneNumber}/{eMail}/{addr}\n')
             
+def loadContact(lst): #처음 실행시 연락처 로드함수
+    try:
+        with open('./contacts.txt', mode='r', encoding='utf-8') as fp:
+            while True:
+                line = fp.readline()
+                if not line: break
+
+                lines = line.replace('\n','').split('/') #list
+                contact = Contact(name=lines[0],phoneNumber=lines[1],eMail=lines[2],addr=lines[3])
+                lst.append(contact)
+    except: # 연락처 파일이 없으면 새로 만들어줌.
+        f = open('./contacts.txt', mode = 'w',encoding='utf-8')
+        f.close()
+
+
 
 def displayMenu():
     menu = ('주소록 프로그램\n'
@@ -75,6 +90,7 @@ def getContacts(lst): # 리스트를 받아서 출력함수
 def run():
     # 연락처담을 주소록 리스트
     lstContact = []
+    loadContact(lstContact) #연락처 로드
 
     clearConsole() # 화면을 클리어
     while True:
@@ -85,16 +101,16 @@ def run():
             contact = setContact()
             lstContact.append(contact)
             # print(lstContact)
-            input('입력성공!'); clearConsole() # 엔터 입력유도            
+            input(); clearConsole() # 엔터 입력유도            
         elif selMenu == 2: # 연락처 출력
             clearConsole()
             getContacts(lstContact)
-            input('출력성공'); clearConsole()
+            input(); clearConsole()
         elif selMenu == 3: # 연락처 삭제
             clearConsole()
             name=input('삭제할 이름 입력 : ')
             delContact(lstContact, name)
-            input('삭제성공'); clearConsole()
+            input(); clearConsole()
         elif selMenu == 4:
             saveContact(lstContact)
             break
