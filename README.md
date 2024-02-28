@@ -104,8 +104,17 @@
         - Windows App만들기(PyQt)
 
         ![QtApp](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata02.png)
-##6일차
 
+##6일차(2402.02.28)
+- 파이썬 학습
+    -PyQt5 학습 이어서
+        - Qwidget 자식 클래스 종류 학습
+
+        ![QLabel](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata03.png)
+
+        - Naver 뉴스API 검색 앱
+
+        ![naverApp](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata04.png)
 
 ##7일차
 
