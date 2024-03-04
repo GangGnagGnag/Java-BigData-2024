@@ -1,7 +1,7 @@
 # 빅데이터 언어2024        
 빅데이터 자바 개발자 파이썬 학습 리포지토리
 
-##1일차
+## 1일차
 - 파이썬 개발환경
     - [깃허브](https://github.com)가입
     - [깃 설치](https://git-scm.com/downloads) 설치
@@ -40,7 +40,7 @@
             - 퓨플은 수정 삭제 불가 (그 외에는 리스트와 동일함)
 
 
-##2일차
+## 2일차
 - 파이썬 학습
     - 파이썬 기초문법
         - 딕셔너리, 집합
@@ -50,13 +50,13 @@
         - 제어문 연습
         - 함수
 
-##3일차
+## 3일차
 - 파이썬학습
     - 파이썬 기초문법
         - 입출력
         - 객체지향
 
-##4일차
+## 4일차
 - 파이썬학습
     - 파이썬 기초문법
         - 모듈, 패키지
@@ -64,7 +64,7 @@
         - 내장함수
         - 표준 및 외부 라이브러리
 
-##5일차
+## 5일차
 - 파이썬 학습
     - 파이썬 응용
         - OS내 디렉토리 검색
@@ -105,7 +105,7 @@
 
         ![QtApp](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata02.png)
 
-##6일차(2402.02.28)
+## 6일차(2402.02.28)
 - 파이썬 학습
     -PyQt5 학습 이어서
         - Qwidget 자식 클래스 종류 학습
@@ -117,7 +117,7 @@
 
     ![naverApp](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata04.png)
 
-##7일차
+## 7일차
 - 파이썬 학습
     - pyQt5 계속
         - Naver 뉴스API 검색 앱 마무리
@@ -140,7 +140,8 @@
         ![구글번역](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata07.png)
 
 
-##8일차
+## 8일차
+
 - 파이썬 학습
     - 파이썬 자동화
         - PyAuyoGui 모듈 ( 마우스, 키보드, 화면캡처)
@@ -150,4 +151,15 @@
             <!--html 태그로 이미지를 삽입하면 문제없음-->
             <img src="https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata08.jpg" width="250">
 
+        - Tesseract 프로그램으로 이미지에서 글자 추출(인식률 높이려면 트레이닝을 해서 트레이닝 데이터를 만들어야함)
 
+
+        ![OCR](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata09.png)
+
+
+## 9일차
+- 파이썬 응용
+    - 이미지 처리 OpenCV
+    - 플라스크 웹서버
+    - 그림에디터 만들기
+    - 메모장 만들기
