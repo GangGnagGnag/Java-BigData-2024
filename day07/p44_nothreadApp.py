@@ -28,6 +28,7 @@ class qtApp(QWidget):
         self.pgbTask.setValue(0) # 재설정
         self.pgbTask.setRange(0, 999_999) # 프로그래스바 범위 설정
         self.btnStart.setDisabled(True)
+        # UI(메인) 스레드가 화면을 그릴 수 있는 여유가없음 (응답없음 발생)
         for i in range(0,1_000_000): #0 ~999,999
             print(f'노쓰레드 진행 >> {i}')
             self.pgbTask.setValue(i)

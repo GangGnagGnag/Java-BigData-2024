@@ -143,5 +143,10 @@
 ##8일차
 - 파이썬 학습
     - 파이썬 자동화
-    
+        - PyAuyoGui 모듈 ( 마우스, 키보드, 화면캡처)
+        - 슬랙 webhook로 모아빌 메시지 전송
+
+         ![슬랙](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata08.jpg)
+
+
 
