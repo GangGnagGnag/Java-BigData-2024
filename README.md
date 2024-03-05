@@ -161,12 +161,15 @@
 - 파이썬 응용
     - 이미지 처리 OpenCV ![윤대희님 깃헙](http://076923.github.io/posts/Python-opencv-1/)
 
-    ![얼굴인식] (https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/day09/capt.jpg)
+    ![얼굴인식] (https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata10.gif)
 
     - [Flask] (https://flask-docs-kr.readthedocs.io/ko/latest/index.html)
-    - [Django] (https://developer.mozilla.org/ko/docs/Learn/Server-side/Django)
+    - [Django] (https://developer.mozilla.org/ko/docs/Learn/Server-side/Django)웹서버
 
-    - Flask,Django 웹서버
-    - 그림에디터 만들기
+    - 그림에디터 만들기(with PyQt5)
+
+    ! [editor] (https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata11.gif)
+
+## 10일차 
     - 메모장 만들기
     - Jupyter Notebook 사용법(빅데이터 분석, 코딩테스트)
