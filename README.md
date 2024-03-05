@@ -121,23 +121,23 @@
 - 파이썬 학습
     - pyQt5 계속
         - Naver 뉴스API 검색 앱 마무리
+
     - json 학습
     - PyQt5
         - 스레드 개념, 학습
 
         ![스레드](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata05.png)
 
-        - TTS
+- 파이썬 응용
+    - TTS
+    
+    - QR코드 생성기
 
-        
+    ![QR](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata06.png)
 
-        - QR코드 생성기
+    - 구글번역기앱
 
-        ![QR](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata06.png)
-
-        - 구글번역기앱
-
-        ![구글번역](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata07.png)
+    ![구글번역](https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/main/images/bigdata07.png)
 
 
 ## 8일차
@@ -159,7 +159,14 @@
 
 ## 9일차
 - 파이썬 응용
-    - 이미지 처리 OpenCV
-    - 플라스크 웹서버
+    - 이미지 처리 OpenCV ![윤대희님 깃헙](http://076923.github.io/posts/Python-opencv-1/)
+
+    ![얼굴인식] (https://raw.githubusercontent.com/GangGnagGnag/Java-BigData-2024/day09/capt.jpg)
+
+    - [Flask] (https://flask-docs-kr.readthedocs.io/ko/latest/index.html)
+    - [Django] (https://developer.mozilla.org/ko/docs/Learn/Server-side/Django)
+
+    - Flask,Django 웹서버
     - 그림에디터 만들기
     - 메모장 만들기
+    - Jupyter Notebook 사용법(빅데이터 분석, 코딩테스트)
