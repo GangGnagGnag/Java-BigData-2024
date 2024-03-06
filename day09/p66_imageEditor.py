@@ -32,8 +32,8 @@ class WinApp(QMainWindow): # QWidget이 아님!!
         self.setWindowIcon(QIcon('F:/Source/java-BigData-2024/day09/imgs/editor.png')) # PyInstaller 용 절대경로를 다 적어줘야함
         self.setWindowTitle('이미지에디터 v0.5')
         ## 이미지 추가/ 여러가지 UI에 대한 초기화 
-        # pixmap = QPixmap('./day09/tropical_beach.jpg').scaledToHeight(471)
-        pixmap = QPixmap('pytropical_beach.jpg').scaledToHeight(471)
+        # pixmap = QPixmap('./day09/coby.jpg').scaledToHeight(501)
+        pixmap = QPixmap('./day09/coby.jpg').scaledToHeight(501)
         self.lblCanvas.setPixmap(pixmap)
         self.brushColor = Qt.red # 빨간색 기본
         ## UI 초기화 끝
@@ -51,6 +51,18 @@ class WinApp(QMainWindow): # QWidget이 아님!!
         self.action_About.triggered.connect(self.actionAboutClicked) 
         # 변환 메뉴 추가
         self.action_Grayscale.triggered.connect(self.actionGrayscaleClicked)
+
+        
+    def actionBlurClicked(self):
+            # tmpPath = './day09/temp.png'
+            tmpPath = './temp.png'
+            pixmap = self.lblCanvas.pixmap() # 라벨에 있는 그림을 pixmap 변수에 저장
+            pixmap.save(tmpPath)
+            image = cv2.imread(tmpPath)
+            blur = cv2.blur(image, (10,10))
+            blurImg = QImage(blur, blur.shape[1], blur.shape[0], blur.strides[0], QImage.Format_BGR888)
+            self.lblCanvas.setPixmap(QPixmap.fromImage(blurImg))
+
 
     def actionGrayscaleClicked(self):
         # image = cv2.imread()
@@ -81,6 +93,7 @@ class WinApp(QMainWindow): # QWidget이 아님!!
         pixmap = QPixmap(imagePath).scaledToHeight(471)
         self.lblCanvas.setPixmap(pixmap)
         self.lblCanvas.adjustSize()
+        
 
     def actionSaveClicked(self):
         filePath, _ = QFileDialog.getSaveFileName(self, '이미지저장', '', 'Image file(*.png)')
