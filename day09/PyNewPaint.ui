@@ -93,7 +93,7 @@
      <property name="title">
       <string>변환(&amp;T)</string>
      </property>
-     <addaction name="action_G"/>
+     <addaction name="action_Grayscale"/>
     </widget>
     <addaction name="menu_P"/>
     <addaction name="menu_T_2"/>
@@ -180,7 +180,7 @@
     <string>이 프로그램은...(&amp;A)</string>
    </property>
   </action>
-  <action name="action_G">
+  <action name="action_Grayscale">
    <property name="text">
     <string>그레이스케일(&amp;G)</string>
    </property>
