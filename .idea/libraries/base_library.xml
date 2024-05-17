@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="base_library">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/day09/build/p66_imageEditor/base_library.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
